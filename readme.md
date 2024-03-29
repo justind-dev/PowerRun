@@ -50,12 +50,15 @@ To ensure scripts run with the correct relative path context, You can set the wo
 ```powershell
 Set-Location -Path $PSScriptRoot
 ```
- 
- 
- 
- 
- 
- 
- 
- 
 
+## Screenshots
+### Main Menu Example
+![alt text](images/screenshot_menu.png "Main Menu Screenshot")
+
+
+### Descriptions enabled:
+![alt text](images/screenshot_menu_descriptions enabled.png "With descriptions enabled")
+
+
+### Running A Script
+![alt text](images/screenshot_menu_script_ran.png "A script being ran")
