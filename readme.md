@@ -9,7 +9,7 @@ PowerRunner provides a dynamic menu system for executing PowerShell scripts with
 - Each script must include specific comments at the beginning to be properly listed in the PowerRunner menu: `DisplayText`, `Description`, and `ConfiguredParameters`.
 
 ## Contents
-The PowerRunner system includes the main `PowerRunner.ps1` script, which scans for PowerShell `.ps1` files in its directory and subdirectories, displaying them in a dynamic menu for execution. It supports:
+The PowerRunner system includes the main `PowerRunner-Menu.ps1` script, which scans for PowerShell `.ps1` files in its directory and subdirectories, displaying them in a dynamic menu for execution. It supports:
 - Dynamically numbered menu entries for found scripts.
 - Description toggle for scripts.
 - Refresh functionality to update the script list based on the directory contents.
@@ -21,14 +21,14 @@ The PowerRunner system includes the main `PowerRunner.ps1` script, which scans f
 
 ## How-To
 ### Installing PowerRunner
-Place `PowerRunner.ps1` in a directory where you intend to run or manage your PowerShell scripts.
+Place `PowerRunner-Menu.ps1` in a directory where you intend to run or manage your PowerShell scripts.
 
 ### Adding New Scripts/Folders
 Simply add `.ps1` files in the PowerRunner directory or any of its subdirectories. Ensure the scripts include the required comments for `DisplayText`, `Description`, and `ConfiguredParameters` at the beginning.
 
 ### Running PowerRunner
-- Open a PowerShell prompt and navigate to the directory containing `PowerRunner.ps1`.
-- Execute `.\PowerRunner.ps1`.
+- Open a PowerShell prompt and navigate to the directory containing `PowerRunner-Menu.ps1`.
+- Execute `.\PowerRunner-Menu.ps1`.
 - Use the numbered menu to select a script to run, toggle descriptions, refresh the script list, view help information, or exit.
 
 ### Script Formatting
