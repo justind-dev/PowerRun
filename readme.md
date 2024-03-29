@@ -33,11 +33,11 @@ Simply add `.ps1` files in the PowerRunner directory or any of its subdirectorie
 
 ### Script Formatting
 To ensure a script is properly listed in PowerRunner's menu, format the first three lines of your `.ps1` file as follows:
-```plaintext
+```powershell
 # DisplayText: "Your Script Name"
 # Description: "A brief description of what your script does."
 # ConfiguredParameters: "Any required parameters, formatted as a single string."
-
+```
 ### Refreshing Script List
 Select the 'Refresh Scripts' option from the menu to update the list based on the current directory contents.
 
