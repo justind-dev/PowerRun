@@ -57,7 +57,7 @@ Set-Location -Path $PSScriptRoot
 
 
 ### Descriptions enabled:
-![alt text]('images/screenshot_menu_descriptions enabled.png' "With descriptions enabled")
+![alt text](images/screenshot_menu_descriptions_enabled.png "With descriptions enabled")
 
 
 ### Running A Script
