@@ -9,7 +9,7 @@
     Clear-Host
     Write-Host "|-----------------------|"
     Write-Host "|                       |"
-    Write-Host "|      PowerRunner      |"
+    Write-Host "|      PowerRun         |"
     Write-Host "|                       |"
     Write-Host "|-----------------------|"
     Write-Host ""
