@@ -85,10 +85,18 @@
                 try {
                     if ($script.Parameters) {
                         # We use invoke expression below because parameters were not passing properly calling the script as in the else command below.
-                        $command = "powershell.exe -File `"$($script.Path)`" $($script.Parameters)"
+                        if ($IsLinux -or $IsMacOS) { # Use pwsh on macOS or Linux
+                            $command = "pwsh -File `"$($script.Path)`" $($script.Parameters)"
+                        } else { # On Windows, we're guaranteed to have powershell.exe. We're not guaranteed to have pwsh.exe, so we shouldn't assume its there
+                            $command = "powershell.exe -File `"$($script.Path)`" $($script.Parameters)"
+                        }
                         & Invoke-Expression $command
                     } else {
-                        & powershell.exe -File $script.Path
+                        if ($IsWindows) {
+                            & powershell.exe -File $script.Path
+                        } else {
+                            & pwsh -File $script.Path
+                        }
                     }
                     Wait-ForKeyPress
                     Show-Menu -ShowDescriptions $ShowDescriptions
