@@ -40,7 +40,7 @@
         }
     }
 
-    # Adjust numbering for standard entries dynamically, starting from 1 and so on, separte index for descriptions.
+    # Adjust numbering for standard entries dynamically, starting from 1 and so on, separate index for descriptions.
     $toggleDescriptionsIndex = $index++
     $refreshScriptsIndex = $index++
     $helpIndex = $index++  # Help option
