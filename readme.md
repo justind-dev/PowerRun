@@ -1,4 +1,4 @@
-# PowerRunner Script Management System
+# PowerRun Powershell Script Runner
 
 ## Summary
 PowerRunner provides a dynamic menu system for executing PowerShell scripts within a specified directory and its subdirectories. It's designed for ease of use, allowing users to add, execute, and manage PowerShell scripts through a simple numbered menu system. This tool is useful for organizing and running scripts for various automation tasks, testing, or administrative purposes without directly consuming resources from the local machine.
